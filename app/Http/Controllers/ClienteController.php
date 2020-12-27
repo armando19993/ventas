@@ -18,8 +18,8 @@ class ClienteController extends Controller
             <tr>
             <th scope=row>". $cliente->id ."</th>
             <td>". $cliente->nombre ."</td>
-            <td>". $cliente->tipo_doc ."-".$cliente->documento."</td>
-            <td></td>
+            <td>". $cliente->tipo_documento ."-".$cliente->documento."</td>
+            <td>Acciones</td>
             </tr>";
         }
 
