@@ -11,7 +11,7 @@ class ClienteController extends Controller
     public function index()
     {
         $cliente = Cliente::all();
-        $tabla = "<th scope='col'>Id</th> <th scope='col'>Nombre</th> <th scope='col'>Documento</th> <th scope='col'>Acciones</th>";
+        $tabla = "<tr></tr><th scope='col'>Id</th> <th scope='col'>Nombre</th> <th scope='col'>Documento</th> <th scope='col'>Acciones</th></tr>";
         return response()->json([
             "data" => $cliente,
             "tabla" => $tabla,
